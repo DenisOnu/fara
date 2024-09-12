@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="new/1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/5.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/7.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="new/8.jpg" alt=""><button>next</button></div>
+    </div>
+    <!-- <div class="swiper-button-next"></div> -->
+    <!-- <div class="swiper-button-prev"></div> -->
+    <div class="swiper-pagination"></div>
+    <Button id="nextbtn"><a href="question.html">After Slide Story Please Click Here</a></Button><
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      mousewheel: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

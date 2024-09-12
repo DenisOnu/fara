@@ -1,0 +1,62 @@
+body {
+    background-image: url('new/bg3.jpg');
+      background-size: cover;
+      background-position: center; /* Centers the background image */
+      background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+  }
+
+#message {
+    background-color: rgba(255, 255, 255, 0.611);
+    font-size: 24px;
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 4s ease forwards; /* Fade in over 2 seconds */
+}
+
+#message p{
+    animation: fadeIn 8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.no {
+    position: absolute;
+    left: 60%;
+}
+
+.yes {
+    position: absolute;
+    left: 35%;
+}
